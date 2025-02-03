@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'jeju gothic';
+      src: url('fonts/제주고딕\(윈도우\).ttf');
+    }
+    @font-face {
+      font-family: 'jeju hanrasan';
+      src: url('fonts/제주한라산\(윈도우\).ttf');
+    }
+    body{
+      font-family: 'jeju gothic';
+    }
+    p{
+      font-size:16px;
+    }
+    .margin{
+      margin-bottom: 45px;
+    }
+    .navbar{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border:0;
+      border-radius:0;
+      border-bottom:0;
+      font-size:12px;
+      letter-spacing:5px;
+    }
+    .navbar-nav li a:hover{
+      color:#A0D9C9;
+    }
+    .bg-1{
+      background-color: #A0D9C9;
+      color:#fff;
+    }
+    .bg-2 {
+    background-color: #D8F2EB; /* Dark Blue */
+    color: #555555;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4{
+    background-color: #2f2f2f;
+    color:#ffffff;
+  }
+  .bg-5{
+    background-color:#808080 ;
+    color:#ffffff;
+  }
+  .container-fluid{
+    padding-top:70px;
+    padding-bottom: 70px;
+  }
+  .container-fluid h3{
+    font-family: 'jeju gothic';
+  }
+  @media screen and (max-width: 767px){
+    #portfolio p{
+      margin-top: 30px;
+    }
+  }
+  h4{
+    font-size: 1.8em;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Yejin</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">자기소개</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">연락처</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="about" class="container-fluid bg-1 text-center" >
+    <h3 class="margin">Who Am I?</h3>
+    <img src="img/tossface.png" class="img-circle" alt="Bird">
+    <h3>The developer of Full Stack</h3>
+  </div>
+  <div id="portfolio" class="container-fluid bg-2 text-center">
+    <h3 class="margin">What Am I?</h3>
+    <p>I am...</p>
+    <a href="https://github.com/Jadeyj-713" class="btn btn-default btn-lg">My github</a>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Portfolio</h3>
+    <h4>Toy project</h4>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>브랜드 홍보페이지</p>
+        <img src="img/tesla.png" alt="Image">
+        <div>
+          html,css,동영상 배경, transition, animtaion
+        </div>
+        <!-- 모달 --------------------------------------------------------------------------------->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
+                
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">개발내용</h4>
+              </div>
+              <div class="modal-body">
+                <p>html5, css3, 동영상 배경으로 웹을 구현해 보았습니다.
+                  <br>
+                  배경에 동영상을 넣고 네비게이션, 애니메이션, 트렌지션을 중심으로 구현해보았습니다.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" href="#" target="_blank">view</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /모달 -->
+      </div>
+      <div class="col-sm-4">
+        <p>쿠팡이츠 데모</p>
+        <a href="https://jadeyj-713.github.io/coupangeats/" target="_blank">
+          <img src="img/coupangeats.png" alt="Image">
+        </a>
+        <div>
+          html,css,bootstrap,반응형 웹
+        </div>
+             
+        <!-- 모달 --------------------------------------------------------------------------------->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
+                
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">개발내용</h4>
+              </div>
+              <div class="modal-body">
+                <p>html5, css3를 기반으로 bootstrap을 사용해서 responsive web을 구현했습니다
+                  <br>
+                  bootstrap을 사용해서 빠르게 개발할 수 있었고, media query 사용법이 중요하다는 것을 배웠습니다.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" href="https://jadeyj-713.github.io/coupangeats/" target="_blank">view</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /모달 -->
+      </div>
+      <div class="col-sm-4">
+        <p>팀 프로젝트</p>
+        <img src="img/cube.png" alt="Image">
+      </div>
+      <div>
+        프론트엔드와 백엔드 구현
+      </div>
+      <!-- 모달 --------------------------------------------------------------------------------->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
+                
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">개발내용</h4>
+            </div>
+            <div class="modal-body">
+              <p>OOO프로그램을 사용해서 responsive web을 구현했습니다
+                <br>
+                 맡은 역할 및 소개 :
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-default" href="#" target="_blank">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /모달 -->
+    </div>
+  </div>
+  <div id="contact" class="container-fluid bg-5 text-center">
+    <h3 class="margin">연락처</h3>
+    <p>이메일 yj980322@naver.com</p>
+    <p>카톡ID jins0815w_ed</p>
+  </div>
+  <footer class="container-fluid bg-4 text-center">
+    &copy; All rights reserved by Yejin Kim
+  </footer>
+</body>
+</html>
